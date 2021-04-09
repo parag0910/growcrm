@@ -1,24 +1,11 @@
 <?php $__env->startSection('content'); ?>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-11"></div>
-            <div class="col-md-1">
-                <div class="form-group mt-10 mr-2">
-                    <select name="language" id="language" class="form-control" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-                        <?php $__currentLoopData = Utility::languages(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $language): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                            <option <?php if($lang == $language): ?> selected <?php endif; ?> value="<?php echo e(route('login',$language)); ?>"><?php echo e(Str::upper($language)); ?></option>
-                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                    </select>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header py-7 py-lg-8 pt-lg-9">
+    
+    <div class="header">
         <div class="container">
-            <div class="header-body text-center mb-5">
+            <div class="header-body text-center">
                 <div class="row justify-content-center">
                     <a class="navbar-brand" href="#">
-                        <img src="<?php echo e(asset(Storage::url('uploads/logo/logo.png'))); ?>" class="auth-logo">
+                        <img src="<?php echo e(asset(Storage::url('uploads/logo/linkzen-full-white.png'))); ?>" height="220px" class="auth-logo">
                     </a>
                 </div>
             </div>
@@ -30,7 +17,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container mt--8 pb-5">
+    <div class="container pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary border-0 mb-0">

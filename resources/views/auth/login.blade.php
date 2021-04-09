@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 @section('content')
-    <div class="container-fluid">
+    {{--<div class="container-fluid">
         <div class="row">
             <div class="col-md-11"></div>
             <div class="col-md-1">
@@ -13,13 +13,13 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="header py-7 py-lg-8 pt-lg-9">
+    </div>--}}
+    <div class="header">
         <div class="container">
-            <div class="header-body text-center mb-5">
+            <div class="header-body text-center">
                 <div class="row justify-content-center">
                     <a class="navbar-brand" href="#">
-                        <img src="{{asset(Storage::url('uploads/logo/logo.png'))}}" class="auth-logo">
+                        <img src="{{asset(Storage::url('uploads/logo/linkzen-full-white.png'))}}" height="220px" class="auth-logo">
                     </a>
                 </div>
             </div>
@@ -31,7 +31,7 @@
         </div>
     </div>
     <!-- Page content -->
-    <div class="container mt--8 pb-5">
+    <div class="container pb-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-7">
                 <div class="card bg-secondary border-0 mb-0">
